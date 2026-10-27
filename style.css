@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #050816;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+#intro {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        180deg,
+        rgba(5, 8, 22, 0.25),
+        rgba(5, 8, 22, 0.85)
+    );
+}
+
+#intro h1 {
+    max-width: 850px;
+    font-size: clamp(32px, 6vw, 66px);
+    color: #ffe7a3;
+    text-shadow: 0 0 25px rgba(255, 190, 80, 0.65);
+}
+
+#intro p {
+    color: #d7dffb;
+    font-size: clamp(16px, 2vw, 22px);
+}
+
+#startButton {
+    padding: 15px 30px;
+    border: 1px solid #ffe7a3;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ffbd59, #ff7b54);
+    color: #24152d;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#startButton:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(255, 189, 89, 0.5);
+}
+
+#scene-title {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    color: white;
+    text-align: center;
+    font-size: clamp(18px, 3vw, 28px);
+    pointer-events: none;
+}

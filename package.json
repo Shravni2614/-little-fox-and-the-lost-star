@@ -1,0 +1,24 @@
+{
+  "name": "little-fox-animation",
+  "version": "1.0.0",
+  "description": "A magical 3D animated short film built with Three.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "threejs",
+    "3d-animation",
+    "short-film"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
